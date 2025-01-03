@@ -1,7 +1,7 @@
 const {test, expect} = require('@playwright/test');
 
 //Resolve synchronisation issues
-test.only('Synchronisation Issues', async ({page}) => {
+test('Synchronisation Issues', async ({page}) => {
     const url = 'https://rahulshettyacademy.com/client';
     const userEmail = page.locator("#userEmail");
     const password = page.locator("#userPassword");
