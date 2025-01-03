@@ -1,7 +1,6 @@
 const {test, expect} = require('@playwright/test');
 
-//Select box
-test.only('Static dropdown, radio buttons, web based popups, checkbox', async ({page}) => {
+test('Static dropdown, radio buttons, web based popups, checkbox', async ({page}) => {
     const url = 'https://rahulshettyacademy.com/loginpagePractise/';
     const username = page.locator("#username");
     const password = page.locator("#password");
@@ -29,6 +28,8 @@ test.only('Static dropdown, radio buttons, web based popups, checkbox', async ({
     await checkBox.uncheck();
     expect(await checkBox.isChecked()).toBeFalsy(); //assertion - we have await inside as actions is perfomed on checkbox location by isChecked method.
     await page.pause();  //This method will pause the current execution of the test and open the browser window. It will allow you to inspect the page and see what is happening.
+
+
 
     //await loginBtn.click();  
     //await allProducts.first().waitFor();
