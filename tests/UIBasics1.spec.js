@@ -46,7 +46,7 @@ test('Validation of incorrect login', async ({page}) => {
 //clear the filled fields and reenter the correct data.
 //Storing the loators in the variables
 //Get first or nth value or all values
-test.only('Validation of correct login', async ({page}) => {
+test('Validation of correct login', async ({page}) => {
     const url = 'https://rahulshettyacademy.com/loginpagePractise/'
     const userName = page.locator("#username");
     const password = page.locator("#password")
