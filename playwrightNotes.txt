@@ -1,3 +1,14 @@
+Locators CSS
+If ID is present  --> tagname#id or #id
+If class attribute is present --> tagname.class or .class
+If any other attribute is present --> [attribute='value']
+If any other attribute is present and value is partially provided then need to use regular expression --> [attribute*='value']
+If traversing from parent to child --> parentTagName >> childTagName
+Search based on text --> text='sometext'
+Search based on has text --> tagName:has-text('sometext')
+
+
+
 Inside that directory, you can run several commands:
 
   npx playwright test
@@ -50,3 +61,5 @@ To capture the screenshot and record trace for the test below two properties nee
 	trace: 'retain-on-failure' //to generate trace while test failed
     screenshot: 'on'
 For individual test cases it will generate a folder in test-results	
+
+
