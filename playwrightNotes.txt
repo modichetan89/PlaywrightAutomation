@@ -6,6 +6,15 @@ If any other attribute is present and value is partially provided then need to u
 If traversing from parent to child --> parentTagName >> childTagName
 Search based on text --> text='sometext'
 Search based on has text --> tagName:has-text('sometext')
+Css with not include class --> "button:not(.react-calendar__month-view__days__day--neighboringMonth)"
+When need to pass dynamic value in xpath ---> "//abbr[text()='"+date+"']" e.g. date is a variable
+
+Locators for Playwright
+getByLabel
+getByLink
+getByRole
+getByPlaceholder
+
 
 
 
@@ -15,7 +24,7 @@ Inside that directory, you can run several commands:
     Runs the end-to-end tests.
 
   npx playwright test --ui
-    Starts the interactive UI mode.
+    Starts the interactive UI mode. Then we can select the required test which we want to run
 
   npx playwright test --project=chromium
     Runs the tests only on Desktop Chrome.
