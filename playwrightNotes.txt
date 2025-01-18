@@ -33,7 +33,7 @@ Inside that directory, you can run several commands:
     Runs the tests in a specific file.
 
   npx playwright test --debug
-    Runs the tests in debug mode.
+    Runs the tests in debug mode. using inspector
 
   npx playwright codegen
     Auto generate tests with Codegen.

@@ -37,3 +37,11 @@ test('Static dropdown, radio buttons, web based popups, checkbox', async ({page}
     //console.log(titles)
 
 });
+
+test('blink text hyperlink assertion', async ({page}) => {
+    const link = page.locator("[href*='documents-request']")
+    await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
+    await expect(link).toHaveAttribute('class','blinkingText'); //assertion -- since not action performed on the link we have await outside
+    await link.click();
+    // await page.pause();
+});
